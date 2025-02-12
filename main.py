@@ -18,7 +18,7 @@ guessed_regions = []
 
 # Game loop: ask the user to guess a region
 while len(guessed_regions) < 20:
-    answer_region = screen.textinput(title=f"{len(guessed_regions)}/20 Guess the Region",
+    answer_region = screen.textinput(title="{len(guessed_regions)}/20 Guess the Region",
                                      prompt="What's ANOTHER region's name?").title()
 
     if answer_region == "Exit":
